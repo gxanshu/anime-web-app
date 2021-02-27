@@ -11,7 +11,7 @@ function Head(props) {
                     <p className="leading-relaxed mb-8">Type <b>{props.type}</b><br />episodes <b>{props.episodes}</b><br />Starting Date <b>{props.startDate}</b><br />End Date <b>{props.endDate}</b><br />score <b>{ props.score}</b></p>
       <div className="flex justify-center">
               <button className="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg" onClick={() => window.location.assign(urli)}>Watch</button>
-        <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Share</button>
+              <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" onClick={()=> window.location.replace(`https://twitter.com/intent/tweet?text=${urli} by @anshumeena1947`)}>Share</button>
       </div>
     </div>
   </div>
