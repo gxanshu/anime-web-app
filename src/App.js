@@ -16,7 +16,7 @@ export class Anime extends React.Component {
         }
     }
     async componentDidMount() {
-        const response = await fetch('https://api.jikan.moe/v3/top/anime');
+        const response = await fetch('https://api.jikan.moe/v4/top/anime');
         const json = await response.json();
         this.setState({
             isLoaded: true,
